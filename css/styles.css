@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@media only screen and (min-width: 1025px) {
+    
+
+
+body {
+    background-image: url(../img/fondo-body.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+header{
+    background-color: rgba(244, 200, 133, 0.80);
+    position:sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr;
+    align-items: center;
+    justify-items: end;
+    
+}
+.logo{
+    width: 180px;
+    justify-self: center;
+
+}
+header h1{
+    color: rgb(185, 17, 121);
+    font-family: 'Berkshire Swash', serif ;
+    font-size: 500%;
+    
+}
+
+header nav ul li a{
+    font-family: 'Besley', serif;
+    text-decoration: none;
+    color: #2a2229;
+
+}
+header nav ul li{
+    background-color: rgb(185, 17, 121);
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(185, 17, 121);
+    text-align: center;
+}
+
+header nav ul{
+    list-style: none;
+    gap: 1%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-content: center;
+    justify-content: end;
+}
+footer{
+    bottom: 0;
+    gap: 2%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 15%
+}
+footer a img{
+    width: 100%;
+    height: 100%;
+    align-self: end;
+}
+.subtitulos{
+    font-family: 'Berkshire Swash', serif ;
+    font-style:italic;
+    font-variant: small-caps;
+    color: #b91179;
+    font-size: 80px ;
+}
+.parrafos{
+    font-family: cursive;
+    font-size:200%;
+}
+
+/*seccion inicio*/
+.inicio{
+    margin: 5% 10% 0% 10%;
+}
+.img-inicio{
+    margin-bottom: 2%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 35vh;
+    column-gap: 1%;
+}
+.img-inicio div img{
+    border-radius: 5%;
+    width: 100%;
+    height: 100%;
+}/*fin inicio*/
+
+/*sección galería*/
+.galeria{
+    margin-top: 5%;
+}
+.img-galeria {
+    background-color: #6239537e;
+    border-radius: 1%;
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+} 
+.img-galeria img{
+    width: 30%;
+    height: 30%;
+    border-radius: 5%;
+    margin: 1%;
+}
+/* .galeria{
+    margin-top: 5%;
+}
+
+
+.img-galeria{
+    background-color: #6239537e;
+    border-radius: 1%;
+    margin: 5%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    'img_1 img_1 img_2 img_2 img_3 img_3'
+    'img_4 img_4 img_5 img_5 img_6 img_6'
+    'img_7 img_7 img_8 img_8 img_9 img_9'
+    'img_10 img_10 img_11 img_11 img_12 img_12';
+}
+.img-galeria img{
+    width: 97%;
+    height: 98%;
+    border-radius: 5%;
+}
+.img-1{
+    grid-area: img_1;
+}
+.img-2{
+    grid-area: img_2;
+}
+.img-3{
+    grid-area: img_3;
+}
+.img-4{
+    grid-area: img_4;
+}
+.img-5{
+    grid-area: img_5;
+}
+.img-6{
+    grid-area: img_6;
+}
+.img-7{
+    grid-area: img_7;
+}
+.img-8{
+    grid-area: img_8;
+}
+.img-9{
+    grid-area: img_9;
+}
+.img-10{
+    grid-area: img_10;
+}
+.img-11{
+    grid-area: img_11;
+}
+.img-12{
+    grid-area: img_12;
+} */
+
+
+/*seccion tienda*/
+.nuestros-productos{
+    margin-top: 5%;
+}
+.card{
+    --bs-card-bg: #6239533b;
+    position:static;
+    font-family: 'Besley', serif;
+}
+
+.nuestros-productos h3{ 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    text-decoration-line: underline ;
+    font-size: 50px;
+}
+
+.boton-comprar{
+    background-color: rgb(135, 22, 33) ;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.boton-comprar:hover{
+    background-color: rgb(176, 40, 54);
+}
+.boton-comprar:active{
+    background-color: #22252a;
+}
+
+.carteras{
+    margin-top: 2%;
+}
+.cartucheras{
+    margin-top: 2%;
+
+}
+.llaveros{
+    margin-top: 2%;
+}
+
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3%;
+    margin: 30px;
+
+}/*fin*/
+/* seccion sobre nosotros */
+.nosotros{
+    margin-top:5%;
+}
+/* fin */
+
+/*seccion contacto*/
+.contactanos{
+    margin-bottom:10%;
+    margin-top: 5%;
+}
+.form-1{
+    display: grid;
+    grid-template-columns: 1fr 60%;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+.contenedor-1{
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr;
+    
+}
+
+.label-input{
+    width: 100%;
+    height: 100%;
+    font-size:30px;
+}
+.contenedor-2 {
+    font-size: 100%;
+}
+.boton-enviar{
+    background-color: rgb(135, 22, 33) ;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    margin-top: 5%;
+    margin-left: 3%;
+    border-style: solid;
+    border-radius: 3px;
+    border-color:rgb(135, 22, 33) ;
+    cursor: pointer;
+} 
+
+}
