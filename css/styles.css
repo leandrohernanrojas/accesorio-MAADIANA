@@ -1,124 +1,158 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 
-@media only screen and (min-width: 1025px) {
-    
+@media only screen and (min-width: 1024px) {
 
 
-body {
-    background-image: url(../img/fondo-body.jpg);
-    background-attachment: fixed;
-    background-size: 100% 100%;
-}
 
-header{
-    background-color: rgba(244, 200, 133, 0.80);
-    position:sticky;
-    top: 0;
-    display: grid;
-    grid-template-columns: 10% 1fr 1fr;
-    align-items: center;
-    justify-items: end;
-    
-}
-.logo{
-    width: 180px;
-    justify-self: center;
+    body {
+        background-image: url(../img/fondo-body.jpg);
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
 
-}
-header h1{
-    color: rgb(185, 17, 121);
-    font-family: 'Berkshire Swash', serif ;
-    font-size: 500%;
-    
-}
+    header {
+        background-color: rgba(244, 200, 133, 0.80);
+        position: sticky;
+        top: 0;
+        display: grid;
+        grid-template-columns: 10% 1fr 1fr;
+        align-items: center;
+        justify-items: end;
+    }
 
-header nav ul li a{
-    font-family: 'Besley', serif;
-    text-decoration: none;
-    color: #2a2229;
+    .logo {
+        width: 180px;
+        justify-self: center;
 
-}
-header nav ul li{
-    background-color: rgb(185, 17, 121);
-    border-style: solid;
-    border-radius: 10px;
-    border-color: rgb(185, 17, 121);
-    text-align: center;
-}
+    }
 
-header nav ul{
-    list-style: none;
-    gap: 1%;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    align-content: center;
-    justify-content: end;
-}
-footer{
-    bottom: 0;
-    gap: 2%;
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    width: 15%
-}
-footer a img{
-    width: 100%;
-    height: 100%;
-    align-self: end;
-}
-.subtitulos{
-    font-family: 'Berkshire Swash', serif ;
-    font-style:italic;
-    font-variant: small-caps;
-    color: #b91179;
-    font-size: 80px ;
-}
-.parrafos{
-    font-family: cursive;
-    font-size:200%;
-}
+    header h1 {
+        color: rgb(185, 17, 121);
+        font-family: 'Berkshire Swash', serif;
+        font-size: 500%;
 
-/*seccion inicio*/
-.inicio{
-    margin: 5% 10% 0% 10%;
-}
-.img-inicio{
-    margin-bottom: 2%;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 35vh;
-    column-gap: 1%;
-}
-.img-inicio div img{
-    border-radius: 5%;
-    width: 100%;
-    height: 100%;
-}/*fin inicio*/
+    }
+    #menu-hamburguesa, .label-hamburguesa{
+        display: none;
+    }
 
-/*sección galería*/
-.galeria{
-    margin-top: 5%;
-}
-.img-galeria {
-    background-color: #6239537e;
-    border-radius: 1%;
-    margin: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-} 
-.img-galeria img{
-    width: 30%;
-    height: 30%;
-    border-radius: 5%;
-    margin: 1%;
-}
-/* .galeria{
+    header ul li a{
+        font-family: 'Besley', serif;
+        text-decoration: none;
+        color: #2a2229;
+    }
+    header ul li a:hover{
+    color: whitesmoke;
+    }
+    header nav ul li {
+        background-color: rgb(185, 17, 121);
+        border-color: rgb(185, 17, 121);
+        text-align: center;
+        border-style: solid;
+        border-radius: 10px;
+    }
+    header nav ul li:hover{
+    background-color: rgb(108, 13, 72);
+    border-color: rgb(108, 13, 72) ;
+    }
+
+    header nav ul {
+        list-style: none;
+        gap: 1%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-content: center;
+        justify-content: end;
+    }
+
+    footer {
+        bottom: 0;
+        gap: 2%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 15%
+    }
+
+    footer a img {
+        width: 100%;
+        height: 100%;
+        align-self: end;
+    }
+
+    .subtitulos {
+        font-family: 'Berkshire Swash', serif;
+        font-style: italic;
+        font-variant: small-caps;
+        color: #b91179;
+        font-size: 80px;
+    }
+
+    .parrafos {
+        font-family: cursive;
+        font-size: 200%;
+    }
+    .parrafos a{
+        text-decoration: none;
+        color:black;
+    }
+
+    /*seccion inicio*/
+    .inicio {
+        margin: 5% 10% 0% 10%;
+    }
+    .inicio h2{
+        font-family: 'Berkshire Swash', serif;
+        font-style: italic;
+        font-variant: small-caps;
+        color: #b91179;
+        font-size: 100px;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    .img-inicio {
+        margin: 5% 0% 5% 0%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 35vh;
+        column-gap: 1%;
+    }
+
+    .img-inicio div img {
+        border-radius: 5%;
+        width: 100%;
+        height: 100%;
+    }
+
+    /*fin inicio*/
+
+    /*sección galería*/
+    .galeria {
+        margin-top: 5%;
+    }
+
+    .img-galeria {
+        background-color: #6239537e;
+        border-radius: 1%;
+        margin: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .img-galeria img {
+        width: 30%;
+        height: 30%;
+        border-radius: 5%;
+        margin: 1%;
+    }
+
+    /* .galeria{
     margin-top: 5%;
 }
 
@@ -181,95 +215,631 @@ footer a img{
 } */
 
 
-/*seccion tienda*/
-.nuestros-productos{
-    margin-top: 5%;
-}
-.card{
-    --bs-card-bg: #6239533b;
-    position:static;
-    font-family: 'Besley', serif;
-}
+    /*seccion tienda*/
+    .nuestros-productos {
+        margin-top: 5%;
+    }
 
-.nuestros-productos h3{ 
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-    text-decoration-line: underline ;
-    font-size: 50px;
-}
+    .card {
+        --bs-card-bg: #6239533b;
+        position: static;
+        font-family: 'Besley', serif;
+    }
 
-.boton-comprar{
-    background-color: rgb(135, 22, 33) ;
-    font-family:Arial, Helvetica, sans-serif;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-}
+    .nuestros-productos h3 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-decoration-line: underline;
+        font-size: 50px;
+    }
 
-.boton-comprar:hover{
-    background-color: rgb(176, 40, 54);
-}
-.boton-comprar:active{
-    background-color: #22252a;
-}
-
-.carteras{
-    margin-top: 2%;
-}
-.cartucheras{
-    margin-top: 2%;
-
-}
-.llaveros{
-    margin-top: 2%;
-}
-
-.contenedor-productos{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 3%;
-    margin: 30px;
-
-}/*fin*/
-/* seccion sobre nosotros */
-.nosotros{
-    margin-top:5%;
-}
-/* fin */
-
-/*seccion contacto*/
-.contactanos{
-    margin-bottom:10%;
-    margin-top: 5%;
-}
-.form-1{
-    display: grid;
-    grid-template-columns: 1fr 60%;
-    margin-top: 5%;
-    margin-left: 2%;
-}
-.contenedor-1{
-    display: grid;
-    grid-template-rows:1fr 1fr 1fr;
+    .boton-comprar {
+        background-color: rgb(135, 22, 33);
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+    }
     
+    .boton-comprar:hover{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(176, 40, 54);
+        color: rgb(255, 255, 255);
+} 
+
+    .carteras {
+        margin-top: 2%;
+    }
+
+    .cartucheras {
+        margin-top: 2%;
+
+    }
+
+    .llaveros {
+        margin-top: 2%;
+    }
+
+    .contenedor-productos {
+        display: grid;
+        grid-template-columns: repeat(3, 20%);
+        gap: 3%;
+        margin: 30px;
+    }
+
+    /*fin tienda*/
+    /* seccion sobre nosotros */
+    .nosotros {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    /* fin */
+
+    /*seccion contacto*/
+    .contactanos {
+        margin-bottom: 10%;
+        margin-top: 5%;
+    }
+
+    .form-1 {
+        display: grid;
+        grid-template-columns: 1fr 60%;
+        margin-top: 5%;
+        margin-left: 2%;
+    }
+
+    .contenedor-1 {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+
+    .label-input {
+        width: 100%;
+        height: 100%;
+        font-size: 30px;
+    }
+
+    .contenedor-2 {
+        font-size: 100%;
+    }
+
+    .boton-enviar {
+        background-color: rgb(135, 22, 33);
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        margin-top: 5%;
+        margin-left: 3%;
+        border-style: solid 1px;
+        border-radius: 3px;
+        border-color: rgb(135, 22, 33);
+        cursor: pointer;
+    }
+.boton-enviar:hover{
+    background-color: rgb(221, 54, 71);
+    border-color:  rgb(221, 54, 71);
+    color: whitesmoke;
 }
 
-.label-input{
-    width: 100%;
-    height: 100%;
-    font-size:30px;
 }
-.contenedor-2 {
-    font-size: 100%;
+
+
+
+
+/* ADAPTACIÓN PARA TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+    body {
+        background-image: url(../img/fondo-body.jpg);
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+
+    header {
+        background-color: rgba(244, 200, 133, 0.80);
+        position: sticky;
+        top: 0;
+        display: grid;
+        grid-template-rows: repeat(3, 40%);
+        align-items: start;
+        justify-items: center;
+
+    }
+
+    .logo {
+        width: 160px;
+    }
+
+    header h1 {
+        color: rgb(185, 17, 121);
+        font-family: 'Berkshire Swash', serif;
+        font-size: 400%;
+        align-self: center;
+    }
+    #menu-hamburguesa, .label-hamburguesa{
+        display: none;
+    }
+
+    header ul li a{
+        font-family: 'Besley', serif;
+        text-decoration: none;
+        color: #2a2229;
+    }
+    header ul li a:hover{
+    color: whitesmoke;
+    }
+    header nav ul li {
+        background-color: rgb(185, 17, 121);
+        border-color: rgb(185, 17, 121);
+        text-align: center;
+        border-style: solid;
+        border-radius: 10px;
+    }
+    header nav ul li:hover{
+    background-color: rgb(108, 13, 72);
+    border-color: rgb(108, 13, 72) ;
+    }
+
+    header nav ul {
+        list-style: none;
+        gap: 1%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    footer {
+        bottom: 0;
+        gap: 2%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 15%
+    }
+
+    footer a img {
+        width: 100%;
+        height: 100%;
+        align-self: end;
+    }
+
+    .subtitulos {
+        font-family: 'Berkshire Swash', serif;
+        font-style: italic;
+        font-variant: small-caps;
+        color: #b91179;
+        font-size: 80px;
+    }
+
+    .parrafos {
+        font-family: cursive;
+        font-size: 200%;
+    }
+    .parrafos a{
+        text-decoration: none;
+        color:black;
+    }
+
+    /*seccion inicio*/
+    .inicio {
+        margin: 5% 10% 0% 10%;
+    }
+
+    .inicio h2{
+        font-family: 'Berkshire Swash', serif;
+        font-style: italic;
+        font-variant: small-caps;
+        color: #b91179;
+        font-size: 80px;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    .img-inicio {
+        margin-bottom: 5% 0% 2% 0%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 35vh;
+        column-gap: 1%;
+    }
+
+    .img-inicio div img {
+        border-radius: 5%;
+        width: 100%;
+        height: 100%;
+    }
+
+    /*fin inicio*/
+
+    /*sección galería*/
+    .galeria {
+        margin-top: 5%;
+    }
+
+    .img-galeria {
+        background-color: #6239537e;
+        border-radius: 1%;
+        margin: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .img-galeria img {
+        width: 30%;
+        height: 30%;
+        border-radius: 5%;
+        margin: 1%;
+    }
+    /*  fin galeria */
+
+    /*seccion tienda*/
+    .nuestros-productos {
+        margin-top: 5%;
+    }
+
+    .card {
+        --bs-card-bg: #6239533b;
+        position: static;
+        font-family: 'Besley', serif;
+        margin: 2%;
+        width: 200px;
+    }
+
+    .nuestros-productos h3 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-decoration-line: underline;
+        font-size: 50px;
+    }
+
+    .boton-comprar {
+        background-color: rgb(135, 22, 33);
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+    }
+    
+    .boton-comprar:hover{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(176, 40, 54);
+        color: rgb(255, 255, 255);
+    } 
+    
+    .carteras {
+        margin-top: 2%;
+    }
+    
+    .cartucheras {
+        margin-top: 2%;
+        
+    }
+
+    .llaveros {
+        margin-top: 2%;
+    }
+
+    .contenedor-productos {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    /*fin tienda*/
+    /* seccion sobre nosotros */
+    .nosotros {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    /* fin */
+
+    /*seccion contacto*/
+    .contactanos {
+        margin-bottom: 10%;
+        margin-top: 5%;
+    }
+
+    .form-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 5%;
+        margin-left: 2%;
+    }
+
+    .contenedor-1 {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+
+    .label-input input{
+        width: 70%;
+        height: 50%;
+        font-size: 150% ;
+    }
+
+    .contenedor-2 textarea {
+        font-size: 150%;
+        width: 70%;
+        height: 85%
+    }
+
+    .boton-enviar {
+        background-color: rgb(135, 22, 33);
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        margin-top: 5%;
+        margin-left: 3%;
+        border-style: solid 1px;
+        border-radius: 5px;
+        border-color: rgb(135, 22, 33);
+        cursor: pointer;
+    }
+.boton-enviar:hover{
+    background-color: rgb(221, 54, 71);
+    border-color:  rgb(221, 54, 71);
+    color: whitesmoke;
 }
-.boton-enviar{
-    background-color: rgb(135, 22, 33) ;
-    font-family:Arial, Helvetica, sans-serif;
-    color: rgb(255, 255, 255);
-    margin-top: 5%;
-    margin-left: 3%;
-    border-style: solid;
-    border-radius: 3px;
-    border-color:rgb(135, 22, 33) ;
-    cursor: pointer;
+
+
 } 
+
+
+/* adaptación para celular */
+
+@media only screen and (max-width: 767px)
+{
+    body {
+        background-image: url(../img/fondo-body.jpg);
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+    .logo {
+        width: 80px;
+    }
+
+    header h1 {
+        color: rgb(185, 17, 121);
+        font-family: 'Berkshire Swash', serif;
+        font-size: 168%;
+        align-self: center;
+        justify-self:last baseline;
+    }
+    header{
+        position: sticky;
+        top: 0;
+        background-color: rgba(244, 200, 133, 0.80);
+        display: grid;
+        grid-template-columns: 20% 43% 1fr;
+    }
+    .navbar{
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .menu-hamburguesa{
+        display: none;
+        
+    }
+    .menu-hamburguesa:checked + ul{
+        height:  calc(300% - 100%);
+    }
+    
+    .list-icon{
+        color: black;
+        cursor: pointer;
+    }
+    ul {
+        
+        list-style: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        height: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: end;
+        gap: 1%;
+        background-color: rgba(244, 200, 133, 0.80);
+        overflow: hidden;
+        border-radius: 0 0 0 3%;
+        transition: all .3s;
+    
+    }
+    ul li {
+        background-color: rgb(185, 17, 121);
+        border-color: rgb(185, 17, 121);
+        text-align: center;
+        border-style: solid;
+        border-radius: 10px;
+    }
+    ul li:hover{
+        background-color: rgb(108, 13, 72);
+        border-color: rgb(108, 13, 72) ;
+    }
+    
+    ul li a {
+        font-family: 'Besley', serif;
+        text-decoration: none;
+        color: #2a2229;
+        font-size: 15px;
+    }
+    ul li a:hover{
+    color: whitesmoke;
+    }
+
+    footer {
+        bottom: 0;
+        gap: 2%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 20vh
+        
+    }
+
+    footer a img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .subtitulos {
+        font-family: 'Berkshire Swash', serif;
+        font-style: italic;
+        font-variant: small-caps;
+        color: #b91179;
+        font-size: 50px;
+    }
+
+    .parrafos {
+        font-family: cursive;
+        font-size: 200%;
+    }
+    .parrafos a{
+        text-decoration: none;
+        color:black;
+    }
+
+    /*seccion inicio*/
+    .inicio {
+        margin: 5% 10% 0% 10%;
+    }
+    .inicio h2{
+        font-family: 'Berkshire Swash', serif;
+        font-style: italic;
+        font-variant: small-caps;
+        color: #b91179;
+        font-size: 30px;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    .img-inicio {
+        margin: 10% 0% 1% 0%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        
+    }
+
+    .img-inicio div img {
+        border-radius: 5%;
+        width: 100%;
+        height: 90%;
+    }
+
+    /*fin inicio*/
+
+    /*sección galería*/
+    .galeria {
+        margin-top: 5%;
+    }
+
+    .img-galeria {
+        background-color: #6239537e;
+        border-radius: 1%;
+        margin: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .img-galeria img {
+        width: 30%;
+        height: 30%;
+        border-radius: 5%;
+        margin: 1%;
+    }
+    /*  fin galeria */
+
+    /*seccion tienda*/
+    .nuestros-productos {
+        margin-top: 5%;
+    }
+
+    .card {
+        --bs-card-bg: #6239533b;
+        position: static;
+        font-family: 'Besley', serif;
+        margin: 2%;
+        width: 200px;
+    }
+
+    .nuestros-productos h3 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-decoration-line: underline;
+        font-size: 30px;
+    }
+
+    .boton-comprar {
+        background-color: rgb(135, 22, 33);
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+    }
+    
+    .boton-comprar:hover{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(176, 40, 54);
+        color: rgb(255, 255, 255);
+    } 
+
+    .contenedor-productos {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    /*fin tienda*/
+    /* seccion sobre nosotros */
+    .nosotros {
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+
+    /* fin */
+
+    /*seccion contacto*/
+    .contactanos {
+        margin-bottom: 8%;
+        margin-top: 5%;
+    }
+
+    .form-1 {
+        margin: 3%;
+        margin-left: 2%;
+    }
+
+    .contenedor-1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .label-input{
+        margin-top: 2%;
+    }
+    
+    .contenedor-2  {
+        margin-top: 3%;
+    }
+    .form-1 textarea{
+        width: 100%;
+    }
+
+    .form-1 input, textarea{
+        background-color: rgb(247, 242, 235);
+    }
+
+    .boton-enviar {
+        background-color: rgb(135, 22, 33);
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        margin-top: 2%;
+        margin-left: 3%;
+        border-style: solid 1px;
+        border-radius: 5px;
+        border-color: rgb(135, 22, 33);
+        cursor: pointer;
+    }
+.boton-enviar:hover{
+    background-color: rgb(221, 54, 71);
+    border-color:  rgb(221, 54, 71);
+    color: whitesmoke;
+}
 
 }
