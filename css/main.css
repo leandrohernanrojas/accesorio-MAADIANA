@@ -1,3 +1,16 @@
+.llaveros .contenedor-productos, .cartucheras .contenedor-productos, .carteras .contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 20%);
+  gap: 3%;
+  margin: 30px;
+}
+
+.llaveros .contenedor-productos .card, .cartucheras .contenedor-productos .card, .carteras .contenedor-productos .card {
+  --bs-card-bg: #6239533b;
+  position: static;
+  font-family: "Besley", serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -44,6 +57,7 @@ header {
   justify-items: end;
 }
 header .logo {
+  justify-self: start;
   width: 180px;
   justify-self: center;
 }
@@ -84,128 +98,6 @@ header .navbar ul li a:hover {
   color: whitesmoke;
 }
 
-@media only screen and (min-width: 1024px) {
-  .main-index .inicio {
-    margin: 5% 10% 0% 10%;
-  }
-  .main-index .inicio h2 {
-    font-family: "Berkshire Swash", serif;
-    font-style: italic;
-    font-variant: small-caps;
-    color: #b91179;
-    font-size: 100px;
-    text-decoration: underline;
-    text-align: center;
-  }
-  .main-index .inicio .img-inicio {
-    margin: 5% 0% 5% 0%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 35vh;
-    column-gap: 1%;
-  }
-  .main-index .inicio .img-inicio div img {
-    border-radius: 5%;
-    width: 100%;
-    height: 100%;
-  }
-  .main_galeria .galeria {
-    margin-top: 5%;
-  }
-  .main_galeria .galeria .img-galeria {
-    background-color: rgba(98, 57, 83, 0.4941176471);
-    border-radius: 1%;
-    margin: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  .main_galeria .galeria .img-galeria img {
-    width: 30%;
-    height: 30%;
-    border-radius: 5%;
-    margin: 1%;
-  }
-}
-.main_tienda .nuestros-productos {
-  margin-top: 5%;
-}
-
-.carteras {
-  margin-top: 2%;
-}
-.carteras .contenedor-productos {
-  display: grid;
-  grid-template-columns: repeat(3, 20%);
-  gap: 3%;
-  margin: 30px;
-}
-.carteras .contenedor-productos .card {
-  --bs-card-bg: #6239533b;
-  position: static;
-  font-family: "Besley", serif;
-}
-.carteras .contenedor-productos .card div .boton-comprar {
-  background-color: rgb(135, 22, 33);
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(255, 255, 255);
-}
-.carteras .contenedor-productos .card div .boton-comprar:hover {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(176, 40, 54);
-  color: rgb(255, 255, 255);
-}
-
-.cartucheras {
-  margin-top: 2%;
-}
-.cartucheras .contenedor-productos {
-  display: grid;
-  grid-template-columns: repeat(3, 20%);
-  gap: 3%;
-  margin: 30px;
-}
-.cartucheras .contenedor-productos .card {
-  --bs-card-bg: #6239533b;
-  position: static;
-  font-family: "Besley", serif;
-}
-.cartucheras .contenedor-productos .card div .boton-comprar {
-  background-color: rgb(135, 22, 33);
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(255, 255, 255);
-}
-.cartucheras .contenedor-productos .card div .boton-comprar:hover {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(176, 40, 54);
-  color: rgb(255, 255, 255);
-}
-
-.llaveros {
-  margin-top: 2%;
-}
-.llaveros .contenedor-productos {
-  display: grid;
-  grid-template-columns: repeat(3, 20%);
-  gap: 3%;
-  margin: 30px;
-}
-.llaveros .contenedor-productos .card {
-  --bs-card-bg: #6239533b;
-  position: static;
-  font-family: "Besley", serif;
-}
-.llaveros .contenedor-productos .card div .boton-comprar {
-  background-color: rgb(135, 22, 33);
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(255, 255, 255);
-}
-.llaveros .contenedor-productos .card div .boton-comprar:hover {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(176, 40, 54);
-  color: rgb(255, 255, 255);
-}
-
 .main-index .inicio {
   margin: 5% 10% 0% 10%;
 }
@@ -231,10 +123,10 @@ header .navbar ul li a:hover {
   height: 100%;
 }
 
-.main_galeria .galeria {
+.main-galeria .galeria {
   margin-top: 5%;
 }
-.main_galeria .galeria .img-galeria {
+.main-galeria .galeria .img-galeria {
   background-color: rgba(98, 57, 83, 0.4941176471);
   border-radius: 1%;
   margin: 5%;
@@ -242,7 +134,7 @@ header .navbar ul li a:hover {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.main_galeria .galeria .img-galeria img {
+.main-galeria .galeria .img-galeria img {
   width: 30%;
   height: 30%;
   border-radius: 5%;
@@ -255,17 +147,6 @@ header .navbar ul li a:hover {
 
 .carteras {
   margin-top: 2%;
-}
-.carteras .contenedor-productos {
-  display: grid;
-  grid-template-columns: repeat(3, 20%);
-  gap: 3%;
-  margin: 30px;
-}
-.carteras .contenedor-productos .card {
-  --bs-card-bg: #6239533b;
-  position: static;
-  font-family: "Besley", serif;
 }
 .carteras .contenedor-productos .card div .boton-comprar {
   background-color: rgb(135, 22, 33);
@@ -281,17 +162,6 @@ header .navbar ul li a:hover {
 .cartucheras {
   margin-top: 2%;
 }
-.cartucheras .contenedor-productos {
-  display: grid;
-  grid-template-columns: repeat(3, 20%);
-  gap: 3%;
-  margin: 30px;
-}
-.cartucheras .contenedor-productos .card {
-  --bs-card-bg: #6239533b;
-  position: static;
-  font-family: "Besley", serif;
-}
 .cartucheras .contenedor-productos .card div .boton-comprar {
   background-color: rgb(135, 22, 33);
   font-family: Arial, Helvetica, sans-serif;
@@ -306,17 +176,6 @@ header .navbar ul li a:hover {
 .llaveros {
   margin-top: 2%;
 }
-.llaveros .contenedor-productos {
-  display: grid;
-  grid-template-columns: repeat(3, 20%);
-  gap: 3%;
-  margin: 30px;
-}
-.llaveros .contenedor-productos .card {
-  --bs-card-bg: #6239533b;
-  position: static;
-  font-family: "Besley", serif;
-}
 .llaveros .contenedor-productos .card div .boton-comprar {
   background-color: rgb(135, 22, 33);
   font-family: Arial, Helvetica, sans-serif;
@@ -326,6 +185,56 @@ header .navbar ul li a:hover {
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(176, 40, 54);
   color: rgb(255, 255, 255);
+}
+
+.main-nosotros .nosotros {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.main-nosotros .nosotros p {
+  margin: 5%;
+}
+
+.main-contactanos .contactanos {
+  margin-bottom: 10%;
+  margin-top: 5%;
+}
+.main-contactanos .contactanos form .form-1 {
+  display: grid;
+  grid-template-columns: 1fr 60%;
+  margin-top: 5%;
+  margin-left: 2%;
+}
+.main-contactanos .contactanos form .form-1 .contenedor-1 {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.main-contactanos .contactanos form .form-1 .contenedor-1 .label-input {
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+}
+.main-contactanos .contactanos form .form-1 .contenedor-2 {
+  font-size: 100%;
+}
+.main-contactanos .contactanos form .boton-input .boton-enviar {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(135, 22, 33);
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  margin-top: 5%;
+  margin-left: 3%;
+  border-style: solid 1px;
+  border-radius: 5px;
+  border-color: rgb(135, 22, 33);
+  cursor: pointer;
+}
+.main-contactanos .contactanos form .boton-input .boton-enviar.hover {
+  background-color: rgb(221, 54, 71);
+  border-color: rgb(221, 54, 71);
+  color: whitesmoke;
 }
 
 footer {
@@ -339,6 +248,169 @@ footer a img {
   width: 100%;
   height: 100%;
   align-self: end;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, 40% r);
+    align-items: start;
+    justify-items: center;
+  }
+  header .logo {
+    width: 160px;
+  }
+  header h1 {
+    font-size: 400%;
+    align-self: center;
+  }
+  .main-index .inicio {
+    margin: 5% 10% 0% 10%;
+  }
+  .main-index .inicio h2 {
+    font-size: 80px;
+  }
+  .main-tienda .contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main-tienda .card {
+    margin: 2%;
+    width: 240px;
+  }
+  .main-contactanos .form-1 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .main-contactanos .form-1 .contenedor-1 .label-input input {
+    width: 97%;
+    height: 55%;
+    font-size: 100%;
+  }
+  .main-contactanos .form-1 .contenedor-2 textarea {
+    margin-left: 7%;
+    font-size: 150%;
+    width: 70%;
+    height: 85%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header {
+    align-items: none;
+    justify-items: none;
+    grid-template-columns: 20% 1fr auto;
+  }
+  header .logo {
+    width: 20dvw;
+  }
+  header h1 {
+    font-size: 10dvw;
+    align-self: center;
+    justify-self: center;
+  }
+  header .navbar {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  header .navbar .label-hamburguesa {
+    display: block;
+  }
+  header .navbar .label-hamburguesa .list-icon {
+    color: black;
+    cursor: pointer;
+  }
+  header .navbar #menu-hamburguesa {
+    display: none;
+  }
+  header .navbar #menu-hamburguesa:checked + ul {
+    height: 165px;
+  }
+  header .navbar ul {
+    width: auto;
+    position: absolute;
+    top: 100%;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    background-color: rgba(244, 200, 133, 0.8);
+    overflow: hidden;
+    border-radius: 0 0 0 3%;
+    transition: all 0.3s;
+  }
+  .subtitulos {
+    font-size: 300%;
+  }
+  .main-index .inicio h2 {
+    font-size: 10dvw;
+  }
+  .main-index .inicio .img-inicio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main-index .inicio .img-inicio div img {
+    height: 90%;
+  }
+  .main-galeria .galeria .img-galeria {
+    background-color: transparent;
+  }
+  .main-galeria .galeria .img-galeria img {
+    border: solid 20px rgba(98, 57, 83, 0.4941176471);
+    width: 80%;
+    border-radius: 10%;
+    margin: 3%;
+  }
+  .main-tienda h3 {
+    font-size: 30px;
+  }
+  .main-tienda .contenedor-productos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .main-tienda .contenedor-productos .card {
+    margin: 2%;
+    width: 200px;
+    background-color: rgba(98, 57, 83, 0.4941176471);
+  }
+  .main-nosotros p {
+    margin: 5%;
+  }
+  .main-contactanos .contactanos {
+    margin-top: 5%;
+  }
+  .main-contactanos .contactanos form .form-1 {
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+  }
+  .main-contactanos .contactanos form .form-1 .contenedor-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-contactanos .contactanos form .form-1 .contenedor-1 .label-input {
+    font-size: 100%;
+    margin-top: 2%;
+  }
+  .main-contactanos .contactanos form .form-1 .contenedor-2 {
+    margin-top: 3%;
+    font-size: 100%;
+  }
+  .main-contactanos .contactanos form .form-1 .contenedor-2 textarea {
+    width: 100%;
+  }
+  .main-contactanos .contactanos form .boton-enviar {
+    margin-top: 2%;
+  }
+  footer {
+    width: 20vh;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

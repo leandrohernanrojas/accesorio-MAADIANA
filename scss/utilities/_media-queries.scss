@@ -1,139 +1,241 @@
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 40%r);
+        align-items: start;
+        justify-items: center;
+
+        .logo {
+            width: 160px;
+        }
+
+        h1 {
+            font-size: 400%;
+            align-self: center;
+        }
+
+    }
+
     .main-index {
         .inicio {
             margin: 5% 10% 0% 10%;
 
             h2 {
-                font-family: 'Berkshire Swash', serif;
-                font-style: italic;
-                font-variant: small-caps;
-                color: #b91179;
-                font-size: 100px;
-                text-decoration: underline;
-                text-align: center;
+                font-size: 80px;
+            }
+        }
+    }
+
+    .main-tienda {
+        .contenedor-productos {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            margin: 2%;
+            width: 240px;
+        }
+    }
+
+    .main-contactanos {
+        .form-1 {
+            grid-template-columns: 1fr 1fr;
+
+            .contenedor-1 {
+                .label-input {
+                    input {
+                        width: 97%;
+                        height: 55%;
+                        font-size: 100%;
+                    }
+                }
+            }
+
+            .contenedor-2 {
+                textarea {
+                    margin-left: 7%;
+                    font-size: 150%;
+                    width: 70%;
+                    height: 85%;
+                }
+            }
+
+        }
+
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    header {
+        align-items: none;
+        justify-items: none;
+        grid-template-columns: 20% 1fr auto;
+
+        .logo {
+            width: 20dvw;
+
+        }
+
+        h1 {
+            font-size: 10dvw;
+            align-self: center;
+            justify-self: center;
+        }
+
+        .navbar {
+            width: auto;
+            height: 100%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .label-hamburguesa {
+                display: block;
+
+                .list-icon {
+                    color: black;
+                    cursor: pointer;
+                }
+
+            }
+
+            #menu-hamburguesa {
+                display: none;
+
+                &:checked+ul {
+                    height: 165px;
+                }
+            }
+
+            ul {
+                width: auto;
+                position: absolute;
+                top: 100%;
+                height: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: end;
+                background-color: rgba(244, 200, 133, 0.80);
+                overflow: hidden;
+                border-radius: 0 0 0 3%;
+                transition: all .3s;
+            }
+
+        }
+    }
+
+    .subtitulos {
+        font-size: 300%;
+    }
+
+    .main-index {
+        .inicio {
+            h2 {
+                font-size: 10dvw;
             }
 
             .img-inicio {
-                margin: 5% 0% 5% 0%;
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: 35vh;
-                column-gap: 1%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
 
                 div {
                     img {
-                        border-radius: 5%;
-                        width: 100%;
-                        height: 100%;
+                        height: 90%;
+
                     }
                 }
             }
         }
     }
 
-    .main_galeria {
+    .main-galeria {
         .galeria {
-            margin-top: 5%;
-
             .img-galeria {
-                background-color: #6239537e;
-                border-radius: 1%;
-                margin: 5%;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
+                background-color: transparent;
 
                 img {
-                    width: 30%;
-                    height: 30%;
-                    border-radius: 5%;
-                    margin: 1%;
+                    border: solid 20px $bg-img-card;
+                    width: 80%;
+                    border-radius: 10%;
+                    margin: 3%;
                 }
-            }
-        }
-    }
-}
 
-.main_tienda{
-    .nuestros-productos {
-        margin-top: 5%;
+            }
+        }
+
     }
-}
-.carteras {
-    margin-top: 2%;.contenedor-productos {
-        display: grid;
-        grid-template-columns: repeat(3, 20%);
-        gap: 3%;
-        margin: 30px;
-        .card {
-            --bs-card-bg: #6239533b;
-            position: static;
-            font-family: 'Besley', serif;
-            div{
-                .boton-comprar {
-                    background-color: rgb(135, 22, 33);
-                    font-family: Arial, Helvetica, sans-serif;
-                    color: rgb(255, 255, 255);
-                    &:hover{
-                        font-family: Arial, Helvetica, sans-serif;
-                        background-color: rgb(176, 40, 54);
-                        color: rgb(255, 255, 255);
-                    }
-                }
-            
+
+    .main-tienda {
+        h3 {
+            font-size: 30px;
+        }
+
+        .contenedor-productos {@include flex(column,wrap,center);
+
+            // display: flex;
+            // flex-direction: column;
+            // flex-wrap: wrap;
+            // align-content: center;
+
+            .card {
+                margin: nth($list:$medidas-porcentual , $n: 1 );
+                width: 200px;
+                background-color:$bg-img-card;
             }
         }
     }
-}
-.cartucheras {
-    margin-top: 2%;.contenedor-productos {
-        display: grid;
-        grid-template-columns: repeat(3, 20%);
-        gap: 3%;
-        margin: 30px;
-        .card {
-            --bs-card-bg: #6239533b;
-            position: static;
-            font-family: 'Besley', serif;
-            div{
-                .boton-comprar {
-                    background-color: rgb(135, 22, 33);
-                    font-family: Arial, Helvetica, sans-serif;
-                    color: rgb(255, 255, 255);
-                    &:hover{
-                        font-family: Arial, Helvetica, sans-serif;
-                        background-color: rgb(176, 40, 54);
-                        color: rgb(255, 255, 255);
+
+    .main-nosotros {
+        p {
+            margin:nth($list:$medidas-porcentual , $n: 2 )
+        }
+    }
+
+    .main-contactanos {
+        .contactanos {
+            margin-top: nth($list:$medidas-porcentual , $n: 2 );
+
+            form {
+                .form-1 {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 3%;
+
+                    .contenedor-1 {
+                        display: flex;
+                        flex-direction: column;
+
+                        .label-input {
+                            font-size: 100%;
+                            margin-top: nth($list:$medidas-porcentual , $n: 1 );
+                        }
+                    }
+
+                    .contenedor-2 {
+                        margin-top: 3%;
+                        font-size: 100%;
+                        textarea{
+
+                            width: 100%;
+                        }
                     }
                 }
-            
+
+                .boton-enviar {
+                    margin-top: nth($list:$medidas-porcentual , $n: 1 );
+                    
+                }
             }
         }
     }
-}
-.llaveros {
-    margin-top: 2%;.contenedor-productos {
-        display: grid;
-        grid-template-columns: repeat(3, 20%);
-        gap: 3%;
-        margin: 30px;
-        .card {
-            --bs-card-bg: #6239533b;
-            position: static;
-            font-family: 'Besley', serif;
-            div{
-                .boton-comprar {
-                    background-color: rgb(135, 22, 33);
-                    font-family: Arial, Helvetica, sans-serif;
-                    color: rgb(255, 255, 255);
-                    &:hover{
-                        font-family: Arial, Helvetica, sans-serif;
-                        background-color: rgb(176, 40, 54);
-                        color: rgb(255, 255, 255);
-                    }
-                }
-            
-            }
-        }
+
+
+
+    footer {
+        width: 20vh
     }
 }

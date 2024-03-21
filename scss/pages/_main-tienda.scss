@@ -1,82 +1,87 @@
-.main_tienda{
+.main_tienda {
     .nuestros-productos {
         margin-top: 5%;
     }
 }
+
 .carteras {
-    margin-top: 2%;.contenedor-productos {
-        display: grid;
-        grid-template-columns: repeat(3, 20%);
-        gap: 3%;
-        margin: 30px;
+    margin-top: 2%;
+
+    .contenedor-productos {@extend %estilo-contenedor-productos;
+        // display: grid;
+        // grid-template-columns: repeat(3, 20%);
+        // gap: 3%;
+        // margin: 30px;
+
         .card {
-            --bs-card-bg: #6239533b;
-            position: static;
-            font-family: 'Besley', serif;
-            div{
+            @extend %card;
+
+            div {
                 .boton-comprar {
                     background-color: rgb(135, 22, 33);
                     font-family: Arial, Helvetica, sans-serif;
                     color: rgb(255, 255, 255);
-                    &:hover{
+
+                    &:hover {
                         font-family: Arial, Helvetica, sans-serif;
                         background-color: rgb(176, 40, 54);
                         color: rgb(255, 255, 255);
                     }
                 }
-            
+
             }
         }
     }
 }
+
 .cartucheras {
-    margin-top: 2%;.contenedor-productos {
-        display: grid;
-        grid-template-columns: repeat(3, 20%);
-        gap: 3%;
-        margin: 30px;
+    margin-top: 2%;
+
+    .contenedor-productos {
+        @extend %estilo-contenedor-productos;
+
         .card {
-            --bs-card-bg: #6239533b;
-            position: static;
-            font-family: 'Besley', serif;
-            div{
+            @extend %card;
+
+            div {
                 .boton-comprar {
                     background-color: rgb(135, 22, 33);
                     font-family: Arial, Helvetica, sans-serif;
                     color: rgb(255, 255, 255);
-                    &:hover{
+
+                    &:hover {
                         font-family: Arial, Helvetica, sans-serif;
                         background-color: rgb(176, 40, 54);
                         color: rgb(255, 255, 255);
                     }
                 }
-            
+
             }
         }
     }
 }
+
 .llaveros {
-    margin-top: 2%;.contenedor-productos {
-        display: grid;
-        grid-template-columns: repeat(3, 20%);
-        gap: 3%;
-        margin: 30px;
-        .card {
-            --bs-card-bg: #6239533b;
-            position: static;
-            font-family: 'Besley', serif;
-            div{
+    margin-top: 2%;
+
+    .contenedor-productos {
+        @extend %estilo-contenedor-productos;
+
+        .card {@extend %card;
+
+            div {
                 .boton-comprar {
                     background-color: rgb(135, 22, 33);
                     font-family: Arial, Helvetica, sans-serif;
                     color: rgb(255, 255, 255);
-                    &:hover{
+
+                    &:hover {
                         font-family: Arial, Helvetica, sans-serif;
                         background-color: rgb(176, 40, 54);
                         color: rgb(255, 255, 255);
                     }
                 }
-            
+
             }
         }
     }

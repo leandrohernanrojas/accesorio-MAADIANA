@@ -1,12 +1,12 @@
-.main_galeria {
+.main-galeria {
 
     .galeria {
         margin-top: 5%;
 
         .img-galeria {
-            background-color: #6239537e;
+            background-color:$bg-img-card;
             border-radius: 1%;
-            margin: 5%;
+            margin: nth($list:$medidas-porcentual , $n: 2 );
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
