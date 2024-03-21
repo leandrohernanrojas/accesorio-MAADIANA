@@ -1,0 +1,13 @@
+@import "utilities/reset";
+@import "utilities/_globals";
+
+@import "components/header";
+
+@import "utilities/_media-queries";
+@import "pages/_main-index";
+@import "pages/main-galeria";
+@import "pages/main-tienda";
+@import "pages/main-nosotros";
+@import "pages/main-contactanos";
+
+@import "components/footer";

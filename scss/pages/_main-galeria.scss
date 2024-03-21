@@ -1,0 +1,22 @@
+.main_galeria {
+
+    .galeria {
+        margin-top: 5%;
+
+        .img-galeria {
+            background-color: #6239537e;
+            border-radius: 1%;
+            margin: 5%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            img {
+                width: 30%;
+                height: 30%;
+                border-radius: 5%;
+                margin: 1%;
+            }
+        }
+    }
+}

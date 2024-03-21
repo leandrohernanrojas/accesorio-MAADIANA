@@ -1,0 +1,62 @@
+header {
+    background-color: rgba(244, 200, 133, 0.80);
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr;
+    align-items: center;
+    justify-items: end;
+
+    .logo {
+        width: 180px;
+        justify-self: center;
+    }
+
+    h1 {
+        color: rgb(185, 17, 121);
+        font-family: 'Berkshire Swash', serif;
+        font-size: 500%;
+    }
+
+    .navbar {
+
+        #menu-hamburguesa,
+        .label-hamburguesa {
+            display: none;
+        }
+
+        ul {
+            list-style: none;
+            gap: 1%;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            align-content: center;
+            justify-content: end;
+
+            li {
+                background-color: rgb(185, 17, 121);
+                border-color: rgb(185, 17, 121);
+                text-align: center;
+                border-style: solid;
+                border-radius: 10px;
+
+                &:hover {
+                    background-color: rgb(108, 13, 72);
+                    border-color: rgb(108, 13, 72);
+
+                }
+
+                a {
+                    font-family: 'Besley', serif;
+                    text-decoration: none;
+                    color: #2a2229;
+
+                    &:hover {
+                        color: whitesmoke;
+                    }
+                }
+            }
+        }
+
+    }
+}

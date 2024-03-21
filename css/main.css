@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../../img/fondo-body.jpg);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.subtitulos {
+  font-family: "Berkshire Swash", serif;
+  font-style: italic;
+  font-variant: small-caps;
+  color: #b91179;
+  font-size: 80px;
+}
+
+.parrafos {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 200%;
+}
+
+.parrafos a {
+  text-decoration: none;
+  color: black;
+}
+
+h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-decoration-line: underline;
+  font-size: 50px;
+}
+
+header {
+  background-color: rgba(244, 200, 133, 0.8);
+  position: sticky;
+  top: 0;
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr;
+  align-items: center;
+  justify-items: end;
+}
+header .logo {
+  width: 180px;
+  justify-self: center;
+}
+header h1 {
+  color: rgb(185, 17, 121);
+  font-family: "Berkshire Swash", serif;
+  font-size: 500%;
+}
+header .navbar #menu-hamburguesa,
+header .navbar .label-hamburguesa {
+  display: none;
+}
+header .navbar ul {
+  list-style: none;
+  gap: 1%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-content: center;
+  justify-content: end;
+}
+header .navbar ul li {
+  background-color: rgb(185, 17, 121);
+  border-color: rgb(185, 17, 121);
+  text-align: center;
+  border-style: solid;
+  border-radius: 10px;
+}
+header .navbar ul li:hover {
+  background-color: rgb(108, 13, 72);
+  border-color: rgb(108, 13, 72);
+}
+header .navbar ul li a {
+  font-family: "Besley", serif;
+  text-decoration: none;
+  color: #2a2229;
+}
+header .navbar ul li a:hover {
+  color: whitesmoke;
+}
+
+@media only screen and (min-width: 1024px) {
+  .main-index .inicio {
+    margin: 5% 10% 0% 10%;
+  }
+  .main-index .inicio h2 {
+    font-family: "Berkshire Swash", serif;
+    font-style: italic;
+    font-variant: small-caps;
+    color: #b91179;
+    font-size: 100px;
+    text-decoration: underline;
+    text-align: center;
+  }
+  .main-index .inicio .img-inicio {
+    margin: 5% 0% 5% 0%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 35vh;
+    column-gap: 1%;
+  }
+  .main-index .inicio .img-inicio div img {
+    border-radius: 5%;
+    width: 100%;
+    height: 100%;
+  }
+  .main_galeria .galeria {
+    margin-top: 5%;
+  }
+  .main_galeria .galeria .img-galeria {
+    background-color: rgba(98, 57, 83, 0.4941176471);
+    border-radius: 1%;
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .main_galeria .galeria .img-galeria img {
+    width: 30%;
+    height: 30%;
+    border-radius: 5%;
+    margin: 1%;
+  }
+}
+.main_tienda .nuestros-productos {
+  margin-top: 5%;
+}
+
+.carteras {
+  margin-top: 2%;
+}
+.carteras .contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 20%);
+  gap: 3%;
+  margin: 30px;
+}
+.carteras .contenedor-productos .card {
+  --bs-card-bg: #6239533b;
+  position: static;
+  font-family: "Besley", serif;
+}
+.carteras .contenedor-productos .card div .boton-comprar {
+  background-color: rgb(135, 22, 33);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+}
+.carteras .contenedor-productos .card div .boton-comprar:hover {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(176, 40, 54);
+  color: rgb(255, 255, 255);
+}
+
+.cartucheras {
+  margin-top: 2%;
+}
+.cartucheras .contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 20%);
+  gap: 3%;
+  margin: 30px;
+}
+.cartucheras .contenedor-productos .card {
+  --bs-card-bg: #6239533b;
+  position: static;
+  font-family: "Besley", serif;
+}
+.cartucheras .contenedor-productos .card div .boton-comprar {
+  background-color: rgb(135, 22, 33);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+}
+.cartucheras .contenedor-productos .card div .boton-comprar:hover {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(176, 40, 54);
+  color: rgb(255, 255, 255);
+}
+
+.llaveros {
+  margin-top: 2%;
+}
+.llaveros .contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 20%);
+  gap: 3%;
+  margin: 30px;
+}
+.llaveros .contenedor-productos .card {
+  --bs-card-bg: #6239533b;
+  position: static;
+  font-family: "Besley", serif;
+}
+.llaveros .contenedor-productos .card div .boton-comprar {
+  background-color: rgb(135, 22, 33);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+}
+.llaveros .contenedor-productos .card div .boton-comprar:hover {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(176, 40, 54);
+  color: rgb(255, 255, 255);
+}
+
+.main-index .inicio {
+  margin: 5% 10% 0% 10%;
+}
+.main-index .inicio h2 {
+  font-family: "Berkshire Swash", serif;
+  font-style: italic;
+  font-variant: small-caps;
+  color: #b91179;
+  font-size: 100px;
+  text-decoration: underline;
+  text-align: center;
+}
+.main-index .inicio .img-inicio {
+  margin: 5% 0% 5% 0%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 35vh;
+  column-gap: 1%;
+}
+.main-index .inicio .img-inicio div img {
+  border-radius: 5%;
+  width: 100%;
+  height: 100%;
+}
+
+.main_galeria .galeria {
+  margin-top: 5%;
+}
+.main_galeria .galeria .img-galeria {
+  background-color: rgba(98, 57, 83, 0.4941176471);
+  border-radius: 1%;
+  margin: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.main_galeria .galeria .img-galeria img {
+  width: 30%;
+  height: 30%;
+  border-radius: 5%;
+  margin: 1%;
+}
+
+.main_tienda .nuestros-productos {
+  margin-top: 5%;
+}
+
+.carteras {
+  margin-top: 2%;
+}
+.carteras .contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 20%);
+  gap: 3%;
+  margin: 30px;
+}
+.carteras .contenedor-productos .card {
+  --bs-card-bg: #6239533b;
+  position: static;
+  font-family: "Besley", serif;
+}
+.carteras .contenedor-productos .card div .boton-comprar {
+  background-color: rgb(135, 22, 33);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+}
+.carteras .contenedor-productos .card div .boton-comprar:hover {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(176, 40, 54);
+  color: rgb(255, 255, 255);
+}
+
+.cartucheras {
+  margin-top: 2%;
+}
+.cartucheras .contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 20%);
+  gap: 3%;
+  margin: 30px;
+}
+.cartucheras .contenedor-productos .card {
+  --bs-card-bg: #6239533b;
+  position: static;
+  font-family: "Besley", serif;
+}
+.cartucheras .contenedor-productos .card div .boton-comprar {
+  background-color: rgb(135, 22, 33);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+}
+.cartucheras .contenedor-productos .card div .boton-comprar:hover {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(176, 40, 54);
+  color: rgb(255, 255, 255);
+}
+
+.llaveros {
+  margin-top: 2%;
+}
+.llaveros .contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 20%);
+  gap: 3%;
+  margin: 30px;
+}
+.llaveros .contenedor-productos .card {
+  --bs-card-bg: #6239533b;
+  position: static;
+  font-family: "Besley", serif;
+}
+.llaveros .contenedor-productos .card div .boton-comprar {
+  background-color: rgb(135, 22, 33);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+}
+.llaveros .contenedor-productos .card div .boton-comprar:hover {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(176, 40, 54);
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  bottom: 0;
+  gap: 2%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 15%;
+}
+footer a img {
+  width: 100%;
+  height: 100%;
+  align-self: end;
+}
+
+/*# sourceMappingURL=main.css.map */
