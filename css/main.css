@@ -71,6 +71,7 @@ header .navbar .label-hamburguesa {
   display: none;
 }
 header .navbar ul {
+  padding-right: 3%;
   list-style: none;
   gap: 1%;
   display: grid;
@@ -317,6 +318,7 @@ footer a img {
   }
   header .navbar .label-hamburguesa {
     display: block;
+    padding-right: 15%;
   }
   header .navbar .label-hamburguesa .list-icon {
     color: black;
@@ -327,6 +329,7 @@ footer a img {
   }
   header .navbar #menu-hamburguesa:checked + ul {
     height: 165px;
+    padding-right: 15%;
   }
   header .navbar ul {
     width: auto;

@@ -93,6 +93,7 @@
 
             .label-hamburguesa {
                 display: block;
+                padding-right: 15%;
 
                 .list-icon {
                     color: black;
@@ -106,6 +107,7 @@
 
                 &:checked+ul {
                     height: 165px;
+                    padding-right: 15%;
                 }
             }
 
@@ -122,6 +124,7 @@
                 overflow: hidden;
                 border-radius: 0 0 0 3%;
                 transition: all .3s;
+                
             }
 
         }
