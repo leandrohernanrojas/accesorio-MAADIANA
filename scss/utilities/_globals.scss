@@ -1,7 +1,9 @@
 body {
-        background-image: url(../img/fondo-body.jpg);
+        background-image: linear-gradient(rgba(24, 23, 23, 0.472),rgba(255, 255, 255, 0.324)), url(../img/fondo-body.jpg ) ;
+        background-size: cover;
         background-attachment: fixed;
         background-size: 100% 100%;
+        
     }
     .subtitulos {
         font-family: 'Berkshire Swash', serif;

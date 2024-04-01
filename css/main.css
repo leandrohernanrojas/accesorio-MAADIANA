@@ -18,7 +18,8 @@
 }
 
 body {
-  background-image: url(../img/fondo-body.jpg);
+  background-image: linear-gradient(rgba(24, 23, 23, 0.472), rgba(255, 255, 255, 0.324)), url(../img/fondo-body.jpg);
+  background-size: cover;
   background-attachment: fixed;
   background-size: 100% 100%;
 }
@@ -48,8 +49,9 @@ h3 {
 }
 
 header {
-  background-color: rgba(244, 200, 133, 0.8);
+  background-color: rgba(244, 200, 133, 0.546);
   position: sticky;
+  z-index: 1;
   top: 0;
   display: grid;
   grid-template-columns: 10% 1fr 1fr;
@@ -57,9 +59,10 @@ header {
   justify-items: end;
 }
 header .logo {
-  justify-self: start;
-  width: 180px;
-  justify-self: center;
+  width: 100%;
+}
+header .logo img {
+  width: 100%;
 }
 header h1 {
   color: rgb(185, 17, 121);
@@ -121,7 +124,11 @@ header .navbar ul li a:hover {
 .main-index .inicio .img-inicio div img {
   border-radius: 5%;
   width: 100%;
-  height: 100%;
+  height: 90%;
+  transition: 0.8s;
+}
+.main-index .inicio .img-inicio div img:hover {
+  transform: scale(1.5);
 }
 
 .main-galeria .galeria {
@@ -140,6 +147,10 @@ header .navbar ul li a:hover {
   height: 30%;
   border-radius: 5%;
   margin: 1%;
+}
+.main-galeria .galeria .img-galeria img:hover {
+  transition: 1s;
+  transform: scale(1.2);
 }
 
 .main_tienda .nuestros-productos {
@@ -243,7 +254,7 @@ footer {
   gap: 2%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 15%;
+  width: 10%;
 }
 footer a img {
   width: 100%;
@@ -412,7 +423,7 @@ footer a img {
     margin-top: 2%;
   }
   footer {
-    width: 20vh;
+    width: 15vh;
   }
 }
 

@@ -10,12 +10,16 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
-
+            
             img {
                 width: 30%;
                 height: 30%;
                 border-radius: 5%;
                 margin: 1%;
+                &:hover{
+                        transition: 1s;
+                        transform: scale(1.2) ;
+                    }
             }
         }
     }

@@ -1,6 +1,7 @@
 header {
-    background-color: rgba(244, 200, 133, 0.80);
+    background-color: rgba(244, 200, 133, 0.546);
     position: sticky;
+    z-index:1;
     top: 0;
     display: grid;
     grid-template-columns: 10% 1fr 1fr;
@@ -8,9 +9,10 @@ header {
     justify-items: end;
 
     .logo {
-        justify-self: start;
-        width: 180px;
-        justify-self: center;
+        width: 100%;
+        img{
+            width: 100%;
+        }
     }
 
     h1 {
