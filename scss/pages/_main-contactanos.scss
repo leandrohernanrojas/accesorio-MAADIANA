@@ -2,32 +2,37 @@
     .contactanos {
         margin-bottom: 10%;
         margin-top: 5%;
-
+        
         form {
             .form-1 {
                 display: grid;
                 grid-template-columns: 1fr 60%;
+                align-items: center;
                 margin-top: 5%;
                 margin-left: 2%;
-
+                
                 .contenedor-1 {
                     display: grid;
                     grid-template-rows: 1fr 1fr 1fr;
-
-                    .label-input {
+                    
+                    .label-input { 
+                        padding: 20px 0px 20px 0px;
                         width: 100%;
                         height: 100%;
                         font-size: 30px;
+                        
                     }
                 }
-
-                .contenedor-2 {
-                    font-size: 100%;
+                
+                .contenedor-2 {                   
+                    font-size: 95%;
+                        }
+                    }
                 }
             }
-
+            
             .boton-input {
-
+                
                 .boton-enviar {
                     width: 100px;
                     height: 50px;
@@ -41,7 +46,7 @@
                     border-radius: 5px;
                     border-color: rgb(135, 22, 33);
                     cursor: pointer;
-
+                    
                     &.hover {
                         background-color: rgb(221, 54, 71);
                         border-color: rgb(221, 54, 71);
@@ -50,5 +55,9 @@
                 }
             }
         }
+        
+    
+
+    input,textarea{
+        outline-style: none;
     }
-}
