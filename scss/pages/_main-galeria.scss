@@ -4,22 +4,23 @@
         margin-top: 5%;
 
         .img-galeria {
-            background-color:$bg-img-card;
+            background-color: $bg-img-card;
             border-radius: 1%;
-            margin: nth($list:$medidas-porcentual , $n: 2 );
+            margin: nth($list: $medidas-porcentual , $n: 2);
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
-            
+
             img {
                 width: 30%;
                 height: 30%;
                 border-radius: 5%;
                 margin: 1%;
-                &:hover{
-                        transition: 1s;
-                        transform: scale(1.2) ;
-                    }
+
+                &:hover {
+                    transition: 1s;
+                    transform: scale(1.2);
+                }
             }
         }
     }

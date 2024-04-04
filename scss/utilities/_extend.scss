@@ -1,11 +1,12 @@
-%estilo-contenedor-productos{
+%estilo-contenedor-productos {
     display: grid;
-        grid-template-columns: repeat(3, 20%);
-        gap: 3%;
-        margin: 30px;
+    grid-template-columns: repeat(3, 20%);
+    gap: 3%;
+    margin: 30px;
 }
-%card{
+
+%card {
     --bs-card-bg: #6239533b;
-            position: static;
-            font-family: 'Besley', serif;
+    position: static;
+    font-family: 'Besley', serif;
 }

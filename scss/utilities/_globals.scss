@@ -1,30 +1,33 @@
 body {
-        background-image: linear-gradient(rgba(24, 23, 23, 0.472),rgba(255, 255, 255, 0.324)), url(../img/fondo-body.jpg ) ;
-        background-size: cover;
-        background-attachment: fixed;
-        background-size: 100% 100%;
-        
-    }
-    .subtitulos {
-        margin-left: 2%;
-        font-family: 'Berkshire Swash', serif;
-        font-style: italic;
-        font-variant: small-caps;
-        color: #b91179;
-        font-size: 80px;
-    }
-    
-    .parrafos {
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 200%;
-    }
-    .parrafos a{
-        text-decoration: none;
-        color:black;
-    }
-    h3 {
-        margin-left: 1%;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        text-decoration-line: underline;
-        font-size: 50px;
-    }
+    background-image: linear-gradient(rgba(24, 23, 23, 0.472), rgba(255, 255, 255, 0.324)), url(../img/fondo-body.jpg );
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+}
+
+.subtitulos {
+    margin-left: 2%;
+    font-family: 'Berkshire Swash', serif;
+    font-style: italic;
+    font-variant: small-caps;
+    color: #b91179;
+    font-size: 80px;
+}
+
+.parrafos {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 200%;
+}
+
+.parrafos a {
+    text-decoration: none;
+    color: black;
+}
+
+h3 {
+    margin-left: 1%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration-line: underline;
+    font-size: 50px;
+}

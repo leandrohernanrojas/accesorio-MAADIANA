@@ -40,48 +40,49 @@
 
     .main-contactanos {
         .contactanos {
-            margin-top: nth($list:$medidas-porcentual , $n: 2 );
-            
+            margin-top: nth($list: $medidas-porcentual , $n: 2);
+
             form {
                 .form-1 {
                     display: flex;
                     align-items: start;
                     flex-direction: column;
                     margin: 3%;
-                    
+
                     .contenedor-1 {
                         display: flex;
                         flex-direction: column;
-                        
+
                         .label-input {
                             padding: 5px;
-                            
+
                             font-size: 100%;
-                            margin-top: nth($list:$medidas-porcentual , $n: 1 );
+                            margin-top: nth($list: $medidas-porcentual , $n: 1);
                         }
                     }
-                    
+
                     .contenedor-2 {
                         margin-top: 1%;
                         font-size: 100%;
-                        textarea{
-                            
+
+                        textarea {
+
                             width: 100%;
                         }
                     }
                 }
-                
+
                 .boton-enviar {
-                    margin-top: nth($list:$medidas-porcentual , $n: 1 );
-                    
+                    margin-top: nth($list: $medidas-porcentual , $n: 1);
+
                 }
             }
         }
 
     }
 }
-    
-    
+
+
 @media only screen and (max-width: 767px) {
     header {
         align-items: none;
@@ -90,7 +91,7 @@
 
         .logo {
             width: 20dvw;
-            
+
 
         }
 
@@ -141,7 +142,7 @@
                 overflow: hidden;
                 border-radius: 0 0 0 3%;
                 transition: all .3s;
-                
+
             }
 
         }
@@ -194,7 +195,8 @@
             font-size: 30px;
         }
 
-        .contenedor-productos {@include flex(column,wrap,center);
+        .contenedor-productos {
+            @include flex(column, wrap, center);
 
             // display: flex;
             // flex-direction: column;
@@ -202,9 +204,9 @@
             // align-content: center;
 
             .card {
-                margin: nth($list:$medidas-porcentual , $n: 1 );
+                margin: nth($list: $medidas-porcentual , $n: 1);
                 width: 200px;
-                background-color:$bg-img-card;
+                background-color: $bg-img-card;
             }
         }
     }
@@ -212,13 +214,13 @@
     .main-nosotros {
         p {
             text-align: start;
-            margin:nth($list:$medidas-porcentual , $n: 2 )
+            margin: nth($list: $medidas-porcentual , $n: 2)
         }
     }
 
     .main-contactanos {
         .contactanos {
-            margin-top: nth($list:$medidas-porcentual , $n: 2 );
+            margin-top: nth($list: $medidas-porcentual , $n: 2);
 
             form {
                 .form-1 {
@@ -232,17 +234,18 @@
                         flex-direction: column;
 
                         .label-input {
-                            padding:0;
-                            
+                            padding: 0;
+
                             font-size: 100%;
-                            margin-top: nth($list:$medidas-porcentual , $n: 1 );
+                            margin-top: nth($list: $medidas-porcentual , $n: 1);
                         }
                     }
 
                     .contenedor-2 {
                         margin-top: 3%;
                         font-size: 100%;
-                        textarea{
+
+                        textarea {
 
                             width: 100%;
                         }
@@ -250,8 +253,8 @@
                 }
 
                 .boton-enviar {
-                    margin-top: nth($list:$medidas-porcentual , $n: 1 );
-                    
+                    margin-top: nth($list: $medidas-porcentual , $n: 1);
+
                 }
             }
         }

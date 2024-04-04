@@ -7,7 +7,8 @@
 .carteras {
     margin-top: 2%;
 
-    .contenedor-productos {@extend %estilo-contenedor-productos;
+    .contenedor-productos {
+        @extend %estilo-contenedor-productos;
         // display: grid;
         // grid-template-columns: repeat(3, 20%);
         // gap: 3%;
@@ -67,7 +68,8 @@
     .contenedor-productos {
         @extend %estilo-contenedor-productos;
 
-        .card {@extend %card;
+        .card {
+            @extend %card;
 
             div {
                 .boton-comprar {
