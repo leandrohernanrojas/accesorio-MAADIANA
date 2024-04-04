@@ -326,9 +326,6 @@ footer a img {
   .main-contactanos .contactanos form .boton-enviar {
     margin-top: 2%;
   }
-  footer {
-    width: 10%;
-  }
 }
 @media only screen and (max-width: 767px) {
   header {
