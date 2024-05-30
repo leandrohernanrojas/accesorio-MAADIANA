@@ -449,7 +449,8 @@ footer a img {
     margin-top: 2%;
   }
   footer {
-    width: 10%;
+    width: 30%;
+    padding: 5%;
   }
 }
 
